@@ -1,0 +1,45 @@
+.rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 20px 0 30px;
+}
+
+.rating * {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.rating li {
+  position: relative;
+  border: 1px solid steelblue;
+  transition: 0.3s;
+}
+
+.rating li input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.rating li label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating li:hover {
+  background: steelblue;
+  color: white;
+}
+
+.rating input:checked ~ label {
+  background: steelblue;
+  color: white;
+}
