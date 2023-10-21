@@ -4,3 +4,5 @@ terminal: git commit -m "commit message"
 terminal: git remote add origin https://github.com/obdwinston/feedback-app.git
 terminal: git push -u origin main
 terminal: git pull
+
+terminal: npm run dev
